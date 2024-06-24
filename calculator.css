@@ -135,7 +135,7 @@ main{
 
 .calculator{
     width: 320px;
-    height: 84vh;
+    min-height: 84vh;
     background: white;
     border-radius: 13px;
     display: flex;
@@ -223,21 +223,4 @@ p{
         height: 100vh;
         width: 100%;
     }
-}
-
-@media (375px < width <= 425px) {
-    
-}
-
-@media (425px < width <= 768px) {
-    
-
-}
-
-@media (768px < width <= 1024px) {
-
-}
-
-@media (width > 1024px) {
-    
 }

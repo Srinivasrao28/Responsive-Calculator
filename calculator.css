@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --bg-color:#AF47D2;
+    --bg-color-navsec:#000000a0;
+    --bg-color-nav:#000000;
+    --btn-green-op:#04aa6d54;
+    --btn-blue-op:#008bba4e;
+    --btn-green:#04aa6d;
+    --btn-blue:#008bba;
+    --btn-red:#f44336;
+    --btn-red-op:#f4433659;
+    --bg-white:#fff;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Kanit", sans-serif;
+}
+#entry_section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#entrybackground {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.entry_content{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.301);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 2s ease 2s;
+}
+@starting-style {
+    .entry_content{
+        opacity: 0;
+    }
+}
+.entry_content h1{
+    font-size: 36px;
+    background-color: var(--btn-red-op);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: default;
+    margin-bottom: 15px;
+    font-weight: 400;
+    transition: opacity 1s ease-in 3s;
+}
+@starting-style {
+    .entry_content h1{
+        opacity: 0;
+    }
+}
+.entry_content h1:hover{
+    background-color: var(--btn-red);
+}
+.entry_content a{
+    width: 70px;
+    height: 30px;
+    background: var(--btn-red-op);
+    color: white;
+    font-size: 28px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 1s ease-in 4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@starting-style {
+    .entry_content a{
+        opacity: 0;
+    }
+}
+.entry_content a:hover{
+    background-color: var(--btn-red);
+}
+
+/* Calculator Css  */
+/* Header  */
+
+header{
+    width: 100vw;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    width: 130px;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Main  */
+
+.body{
+    background: url(Images/images.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    width: 320px;
+    height: 84vh;
+    background: white;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#display{
+    width: 300px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    border-radius: 13px;
+}
+
+#display input{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    background: transparent;
+    color: white;
+}
+
+#btns{
+    width: 280px;
+    height: 60vh;
+    margin-top: 20px;
+    border-radius: 13px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    overflow: hidden;
+      
+}
+
+#btns button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.addbtn{
+    background-color: orange;
+}
+
+.optrbtn{
+    background-color: rgb(252, 177, 38);
+}
+
+/* Footer  */
+
+footer{
+    width: 100vw;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+p{
+    color: aliceblue;
+    cursor: default;
+}
+
+/* Media Queries  */
+
+@media (320px <= width <= 375px) { 
+    main{
+        overflow: hidden;
+    }
+    .calculator{
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media (375px < width <= 425px) {
+    
+}
+
+@media (425px < width <= 768px) {
+    
+
+}
+
+@media (768px < width <= 1024px) {
+
+}
+
+@media (width > 1024px) {
+    
+}
